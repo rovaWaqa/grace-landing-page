@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Community Church</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css" />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur sticky top-0 z-50">
+      <a href="/" class="flex items-center justify-center">
+        <i class="lucide lucide-cross h-8 w-8 text-blue-600"></i>
+        <span class="ml-2 text-xl font-bold text-gray-900">Grace Community Church</span>
+      </a>
+      <nav class="ml-auto flex gap-4 sm:gap-6">
+        <a href="#about" class="text-sm font-medium hover:text-blue-600">About</a>
+        <a href="#services" class="text-sm font-medium hover:text-blue-600">Services</a>
+        <a href="#ministries" class="text-sm font-medium hover:text-blue-600">Ministries</a>
+        <a href="#events" class="text-sm font-medium hover:text-blue-600">Events</a>
+        <a href="#contact" class="text-sm font-medium hover:text-blue-600">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main content goes here -->
+    <main class="flex-1">
+      <!-- For brevity, paste each section's HTML here from your JSX code -->
+      <!-- Convert each JSX tag (e.g., <div>, <section>, <Card>) to standard HTML tags. -->
+      <!-- Replace all React components like <Button>, <Badge>, <Card>, etc., with semantic HTML + Tailwind styling. -->
+      <!-- Replace lucide-react icons with <i class="lucide lucide-icon-name"> -->
+      <!-- Replace Image from 'next/image' with <img src="..." /> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white">
+      <div class="flex items-center gap-2">
+        <i class="lucide lucide-cross h-5 w-5 text-blue-600"></i>
+        <p class="text-xs text-gray-600">
+          &copy; <span id="year"></span> Grace Community Church. All rights reserved.
+        </p>
+      </div>
+      <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+        <a href="#" class="text-xs hover:underline text-gray-600">Privacy Policy</a>
+        <a href="#" class="text-xs hover:underline text-gray-600">Terms of Service</a>
+        <a href="#" class="text-xs hover:underline text-gray-600">Giving</a>
+      </nav>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
