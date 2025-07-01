@@ -3,191 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Church Member Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Church Dashboard</title>
   <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
       margin: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-
-    header {
-      background-color: #34495e;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-
-    .dashboard {
+      background-color: #f4f6f8;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: 300px;
-      margin: 1rem;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    .card h2 {
-      font-size: 2rem;
-      color: #2c3e50;
-    }
-
-    .card p {
-      font-size: 1.2rem;
-      color: #7f8c8d;
-    }
-
-    .charts {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 2rem;
+      align-items: center;
+      height: 100vh;
     }
 
-    .chart-container {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin: 1rem;
-      padding: 2rem;
-      width: 500px;
-    }
-
-    canvas {
-      width: 100% !important;
-      height: auto !important;
-    }
-
-    .links {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .links a {
-      text-decoration: none;
-      margin: 0 10px;
-      color: #2980b9;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #ecf0f1;
-      color: #7f8c8d;
-      margin-top: 3rem;
+    iframe {
+      border: none;
+      width: 95%;
+      height: 95vh;
+      max-width: 1200px;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Lagilagi Methodist Church Dashboard</h1>
-    <p>Welcome to the Church Member Information Portal</p>
-  </header>
-
-  <section class="dashboard">
-    <div class="card">
-      <h2>152</h2>
-      <p>Total Members</p>
-    </div>
-
-    <div class="card">
-      <h2>8</h2>
-      <p>Upcoming Events</p>
-    </div>
-
-    <div class="card">
-      <h2>$12,500</h2>
-      <p>Total Tithes This Month</p>
-    </div>
-
-    <div class="card">
-      <h2>3</h2>
-      <p>New Members This Month</p>
-    </div>
-  </section>
-
-  <section class="charts">
-    <div class="chart-container">
-      <h3>Tithes Collected per Month</h3>
-      <canvas id="tithesChart"></canvas>
-    </div>
-
-    <div class="chart-container">
-      <h3>Member Distribution</h3>
-      <canvas id="memberChart"></canvas>
-    </div>
-  </section>
-
-  <div class="links">
-    <a href="#">View Detailed Dashboard</a>
-    <a href="#">Member Directory</a>
-    <a href="#">Event Calendar</a>
-  </div>
-
-  <footer>
-    &copy; 2025 Lagilagi Methodist Church | All Rights Reserved
-  </footer>
-
-  <script>
-    // Bar Chart - Tithes
-    const tithesChart = new Chart(document.getElementById('tithesChart'), {
-      type: 'bar',
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-        datasets: [{
-          label: 'Tithes ($)',
-          data: [1000, 1500, 1200, 1800, 1600, 2000, 2400],
-          backgroundColor: '#3498db'
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-
-    // Doughnut Chart - Member Categories
-    const memberChart = new Chart(document.getElementById('memberChart'), {
-      type: 'doughnut',
-      data: {
-        labels: ['Adults', 'Youth', 'Children'],
-        datasets: [{
-          label: 'Members',
-          data: [80, 45, 27],
-          backgroundColor: ['#2ecc71', '#f39c12', '#e74c3c']
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'bottom'
-          }
-        }
-      }
-    });
-  </script>
-
+  <iframe title="Dashboard Wiliwili - 2025" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=535e9e9d-6c94-4c8d-badc-d46d719af52e&autoAuth=true&ctid=f721524d-ea60-4048-bc46-757d4b5f9fe8" frameborder="0" allowFullScreen="true"></iframe>
 </body>
 </html>
